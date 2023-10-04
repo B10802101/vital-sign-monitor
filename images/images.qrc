@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="images">
+    <file>BARCODE.png</file>
+    <file>ID_CARD.png</file>
+    <file>MANUAL.png</file>
+  </qresource>
+</RCC>
