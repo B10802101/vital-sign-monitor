@@ -14,7 +14,7 @@ import sys
 import time
 from Views.staff_main_window import *
 from Views.staff_login_window_manual import *
-import images_rc
+
 import os
    
 class PyQt_MVC_Main(QWidget):

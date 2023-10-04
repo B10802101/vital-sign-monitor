@@ -28,10 +28,11 @@ class Ui_staff_main_window(object):
         font.setPointSize(28)
         font.setBold(False)
         font.setUnderline(False)
-        font.setWeight(50)
         self.textBrowser.setFont(font)
-        self.textBrowser.setStyleSheet("border-color: rgb(55, 139, 164);\n"
-"background-color: rgb(55, 139, 164);")
+        self.textBrowser.setStyleSheet("background-color: rgb(19, 81, 99);\n"
+"border: none;\n"
+"border-color: rgb(19, 81, 99);\n"
+"")
         self.textBrowser.setObjectName("textBrowser")
         self.verticalLayout.addWidget(self.textBrowser)
         self.main_screen_button_idcard = QtWidgets.QPushButton(staff_main_window)
@@ -41,13 +42,13 @@ class Ui_staff_main_window(object):
         font.setPointSize(18)
         font.setBold(False)
         font.setItalic(False)
-        font.setWeight(9)
         self.main_screen_button_idcard.setFont(font)
         self.main_screen_button_idcard.setStyleSheet("font: 75 18pt \"Microsoft JhengHei UI\";\n"
 "background-color: rgb(55, 139, 164);\n"
 "color: rgb(255, 255, 255);\n"
 "QPushButton {\n"
 "    border: none;\n"
+"    border-radius: 50px;\n"
 "}\n"
 "QPushButton:pressed {\n"
 "    color: rgb(19, 81, 99);\n"
@@ -70,13 +71,14 @@ class Ui_staff_main_window(object):
         font.setPointSize(18)
         font.setBold(False)
         font.setItalic(False)
-        font.setWeight(9)
         self.main_screen_button_barcode.setFont(font)
+        self.main_screen_button_barcode.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         self.main_screen_button_barcode.setStyleSheet("font: 75 18pt \"Microsoft JhengHei UI\";\n"
 "background-color: rgb(55, 139, 164);\n"
 "color: rgb(255, 255, 255);\n"
 "QPushButton {\n"
 "    border: none;\n"
+"    border-radius: 50px;\n"
 "}\n"
 "QPushButton:pressed {\n"
 "    color: rgb(19, 81, 99);\n"
@@ -95,7 +97,6 @@ class Ui_staff_main_window(object):
         font.setPointSize(18)
         font.setBold(False)
         font.setItalic(False)
-        font.setWeight(9)
         self.main_screen_button_manual.setFont(font)
         self.main_screen_button_manual.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.main_screen_button_manual.setStyleSheet("font: 75 18pt \"Microsoft JhengHei UI\";\n"
@@ -103,9 +104,10 @@ class Ui_staff_main_window(object):
 "color: rgb(255, 255, 255);\n"
 "QPushButton {\n"
 "    border: none;\n"
+"    border-radius: 50px;\n"
 "}\n"
 "QPushButton:pressed {\n"
-"    background-color: red;\n"
+"    color: rgb(19, 81, 99);\n"
 "}\n"
 "")
         icon2 = QtGui.QIcon()
@@ -121,8 +123,11 @@ class Ui_staff_main_window(object):
         _translate = QtCore.QCoreApplication.translate
         staff_main_window.setWindowTitle(_translate("staff_main_window", "Form"))
         self.textBrowser.setHtml(_translate("staff_main_window", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:\'Microsoft JhengHei UI\'; font-size:28pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ffffff;\">輸入員工ID</span></p></body></html>"))
         self.main_screen_button_idcard.setText(_translate("staff_main_window", "插入員工證"))
